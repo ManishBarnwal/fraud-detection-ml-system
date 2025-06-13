@@ -35,7 +35,7 @@ class TransactionProducer:
     
     def send_transaction(self, topic='transactions', num_transactions=100):
         """
-        Send a random transaction data to the kafka topic
+        Send a random transaction data to the kafka topic named 'transactions'
         """
         for i in range(num_transactions):
             transaction = self.generate_transaction() # generate a random transaction data
